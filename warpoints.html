@@ -1,0 +1,349 @@
+<html>
+
+<head>
+
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- This is Bootstrap CSS   -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+
+    <title>War Points</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- always have jquery first before bootstrap   -->
+
+
+
+    <script src="https://kit.fontawesome.com/be20dbf0d8.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+
+
+</head>
+
+<body class="bob-bg">
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top navfont">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav my-2 my-lg-0 w-100 nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link p-4" href="index.html" name="story.html">Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-4" href="character.html" name="Characters">Characters</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link p-4" href="play.html" name="Play">How to Play</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link p-4 active" href="warpoints.html" name="Play">War Points</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link p-4" href="development.html" name="Development">Development</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-4" href="store.html" name="store.html">Store</a>
+                    </li>
+
+
+
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <div class="jumbotron jumboheader">
+        <h1 class="d-flex justify-content-center text-white">War Points</h1>
+    </div>
+
+    <!-- first section header -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col py-2 bg-info subtitle text-center">
+                <p class="py-3">Bonus and Penalties</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+
+        <div class="row my-5 p-3 d-flex justify-content-around stonetable" id="positives">
+            <div class="col-md-2 eqplus py-3" value="1">
+                <p>+1</p>
+            </div>
+
+            <div class="col-md-2 eqplus py-3" value="2">
+                <p>+2</p>
+            </div>
+
+            <div class="col-md-2 eqplus py-3" value="3">
+                <p>+3</p>
+            </div>
+
+            <div class="col-md-2 eqplus py-3" value="4">
+                <p>+4</p>
+            </div>
+
+            <div class="col-md-2 eqplus py-3" value="5">
+                <p>+5</p>
+            </div>
+        </div>
+
+        <div class="row my-5 p-3 d-flex justify-content-around stonetable" id="negatives">
+            <div class="col-md-2 eqplus py-3" value="-1">
+                <p>-1</p>
+            </div>
+
+            <div class="col-md-2 eqplus py-3" value="-2">
+                <p>-2</p>
+            </div>
+
+            <div class="col-md-2 eqplus py-3" value="-3">
+                <p>-3</p>
+            </div>
+
+            <div class="col-md-2 eqplus py-3" value="-4">
+                <p>-4</p>
+            </div>
+
+            <div class="col-md-2 eqplus py-3" value="-5">
+                <p>-5</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col py-2 bg-info subtitle text-center">
+                <p class="py-3">Battlefield</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="row p-2 woodtable d-flex justify-content-around">
+            <div class="col-lg-5 d-flex flex-wrap justify-content-center p-3 m-2 playercards" id="attacker">
+                <h2 class="text-center aord">Attacker</h2>
+                <div class="points" id="apoints">
+                    0
+                </div>
+                <div class="warrior m-2 d-flex justify-content-between align-items-center">
+                    <div class="warriortitle">
+                        I
+                    </div>
+                    <div class="eqslot m-2" id="eqs1">
+                    </div>
+                    <div class="eqslot m-2" id="eqs2">
+                    </div>
+                </div>
+                <div class="warrior m-2 d-flex justify-content-between align-items-center">
+                    <div class="warriortitle">
+                        II
+                    </div>
+                    <div class="eqslot m-2" id="eqs3">
+                    </div>
+                    <div class="eqslot m-2" id="eqs4">
+                    </div>
+                </div>
+                <div class="warrior m-2 d-flex justify-content-between align-items-center" id="aeqb">
+                    drag and drop attacking cards here
+                </div>
+            </div>
+
+            <div class="col-lg-5 d-flex flex-wrap justify-content-center p-2 m-2 playercards" id="defender">
+                <h2 class="text-center aord">Defender</h2>
+                <div class="points" id="dpoints">
+                    0
+                </div>
+                <div class="warrior m-2 d-flex justify-content-between align-items-center">
+                    <div class="warriortitle">
+                        I
+                    </div>
+                    <div class="eqslot m-2" id="eqs5">
+                    </div>
+                    <div class="eqslot m-2" id="eqs6">
+                    </div>
+                </div>
+                <div class="warrior m-2 d-flex justify-content-between align-items-center">
+                    <div class="warriortitle">
+                        II
+                    </div>
+                    <div class="eqslot m-2" id="eqs7">
+                    </div>
+                    <div class="eqslot m-2" id="eqs8">
+                    </div>
+                </div>
+                <div class="warrior m-2 d-flex justify-content-between align-items-center" id="deqb">
+                    drag and drop defending cards here
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="container">
+
+
+
+        <div class="row text-center d-flex justify-content-center align-items-center">
+
+
+
+
+            <div class="col-md-6 smed">
+
+                <a href="https://twitter.com/KingBobGame"> <i id="twitter" class="fab fa-twitter-square fa-5x" aria-hidden="true"></i></a>
+
+                <a href="https://www.instagram.com/kingbobgame/"> <i id="instagram" class="fab fa-instagram-square fa-5x" aria-hidden="true"></i></a>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" ?>
+        // all my js foes in here. this stays at the bottom  
+
+        function iterateChildren(parent) {
+            var sum = 0;
+            parent.children().each(function() {
+                if ($(this).attr('value') != undefined) {
+                    sum += parseInt($(this).attr('value'));
+                }
+            })
+            return sum;
+        };
+
+        function calcVals() {
+
+            //get attack vals
+            let av = 0;
+            $('#attacker').find('.eqslot').each(function() {
+                av += iterateChildren($(this));
+            });
+
+            $('#attacker').find('#aeqb').each(function() {
+                av += iterateChildren($(this));
+            });
+
+            $('#apoints').text(av);
+
+            //get defense vals
+            let dv = 0;
+            $('#defender').find('.eqslot').each(function() {
+                dv += iterateChildren($(this));
+            });
+
+            $('#defender').find('#deqb').each(function() {
+                dv += iterateChildren($(this));
+            });
+
+            $('#dpoints').text(dv);
+        }
+
+
+        //make a variable to store the incoming elements
+        let tempE;
+
+        //prompt text
+        let droptext = 'drag and drop cards here';
+
+        $('.eqplus').draggable({
+            zIndex: 100,
+            //link cursor to the bottom
+            cursorAt: {
+                bottom: 0
+            },
+            //have it slide back to the start
+            revert: true,
+            //use a smaller version to drag
+            helper: "clone"
+        });
+        $('.eqslot').droppable({
+            accept: ".eqplus",
+            drop: function(event, ui) {
+                var $this = $(this);
+                var droppedObject = ui.draggable.clone();
+                droppedObject.addClass("droppedObject")
+                $this.html(droppedObject);
+                calcVals();
+            }
+        });
+
+        $('#aeqb').droppable({
+            accept: ".eqplus",
+            drop: function(event, ui) {
+                var $this = $(this);
+                var droppedObject = ui.draggable.clone();
+                droppedObject.addClass("droppedObject")
+                if ($this[0].innerText.includes("drag and drop")) {
+                    $this.html(droppedObject);
+                } else {
+                    $this.append(droppedObject);
+                }
+
+                calcVals();
+            }
+        })
+
+        $('#deqb').droppable({
+            accept: ".eqplus",
+            drop: function(event, ui) {
+                var $this = $(this);
+                var droppedObject = ui.draggable.clone();
+                droppedObject.addClass("droppedObject");
+                if ($this[0].innerText.includes("drag and drop")) {
+                    $this.html(droppedObject);
+                } else {
+                    $this.append(droppedObject);
+                }
+
+                calcVals();
+            }
+        })
+
+        $(document).on('click', '.droppedObject', function() {
+            $(this).remove();
+            calcVals();
+        })
+    </script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+</body></html>

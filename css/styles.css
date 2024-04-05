@@ -1,0 +1,312 @@
+@font-face {
+    font-family: titlebob;
+    src: url(../media/kingbobtitle.otf);
+
+}
+
+@font-face {
+    font-family: body;
+    src: url(../media/body.otf);
+
+}
+
+@font-face {
+    font-family: store;
+    src: url(../media/storetitle.otf);
+
+}
+
+.navbar {
+    background-color: #ddb126;
+}
+
+
+
+.jumbotron {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 !important;
+
+
+}
+
+.jumboheader {
+    background-image: url(../media/kingbobback.png);
+
+}
+
+
+
+h1 {
+    font-family: titlebob;
+    font-size: 5em;
+}
+
+h2 {
+    font-family: body;
+
+}
+
+.bobstory1 {
+    font-size: 2.5em;
+
+}
+
+p {
+    font-family: body;
+    font-size: 1.5em;
+}
+
+
+
+.bob-bg {
+    background-color: rgba(66, 87, 245, 0.42);
+
+
+}
+
+.navfont {
+    font-family: titlebob;
+    font-size: 1.8em
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+
+header video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+
+
+}
+
+
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1
+}
+
+.carousel-control-prev-icon {
+    margin-left: -100px;
+}
+
+.carousel-control-next-icon {
+    margin-right: -100px;
+}
+
+
+
+a:link {
+    text-decoration: none;
+}
+
+#facebook {
+    color: #3B5998;
+    margin: 20px;
+}
+
+#twitter {
+    color: #55ACEE;
+    margin: 20px;
+}
+
+
+element.style {}
+
+#instagram {
+    color: #3F729B;
+    margin: 20px;
+}
+
+.smed i {
+    font-size: 70px;
+    margin: 20px;
+    padding-top: 10px
+}
+
+
+.videopad {
+    padding: 120px;
+
+}
+
+
+
+/*Store*/
+
+
+.card {
+    background-color: rgba(255, 99, 71, 0.2);
+
+    font-family: store;
+}
+
+.shirtbutton {
+    font-family: store;
+    font-size: 1.4em
+}
+
+h3 {
+
+    padding-bottom: 130px;
+
+}
+
+
+
+/*War Points*/
+
+.eqplus {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../media/Eplus3.jpg);
+    display: flex;
+    justify-content: center;
+    transition: box-shadow .5s;
+}
+
+.eqplus:hover {
+    box-shadow: 0px 10px 10px -5px black;
+    cursor: grab;
+}
+
+.eqplus.ui-draggable-dragging {
+    width: 11vw;
+}
+
+.eqplus p {
+    font-size: 8vw;
+    color: navajowhite;
+    font-family: store;
+}
+
+.stonetable {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../media/stone.jpg);
+}
+
+.subtitle {
+    font-family: body;
+    font-size: 3vw;
+    color: rgb(209, 209, 209);
+}
+
+.woodtable {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../media/wood.jpg);
+}
+
+.warrior {
+    background-color: rgba(152, 152, 152, 0.51);
+    width: 100%;
+    padding: 2vh;
+    min-height: 23vh;
+}
+
+.py-3 {
+    font-family: titlebob;
+    font-size: 5vw;
+
+}
+
+.warriortitle {
+    font-size: 3vw;
+    font-family: sans-serif;
+    color: white;
+    background-color: black;
+    border-radius: 5vw;
+    width: 5vw;
+    height: 5vw;
+    text-align: center;
+    position: relative;
+    left: -5vw;
+}
+
+#attacker {
+    background-color: rgba(218, 232, 255, 0.3);
+}
+
+#defender {
+    background-color: rgba(218, 232, 255, 0.3);
+}
+
+.aord {
+    font-family: titlebob;
+    font-size: 4vw;
+}
+
+
+.playercards {
+    border-radius: .5vw;
+}
+
+.eqslot {
+    background-color: black;
+    border: solid .5vw gold;
+    width: 10vw;
+    height: 12vw;
+    color: white;
+}
+
+.points {
+    font-size: 3rem;
+    color: white;
+    font-family: store;
+    width: 100%;
+    text-align: center;
+}
+
+.droppedObject {
+    max-width: 100% !important;
+    padding: 0 !important;
+    max-height: 100% !important;
+}
+
+.droppedObject p {
+    font-size: 7vw !important;
+}
+
+
+#aeqb {
+    flex-wrap: wrap;
+    font-family: body;
+}
+
+#deqb {
+    flex-wrap: wrap;
+    font-family: body;
+}
